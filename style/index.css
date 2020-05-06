@@ -1,1 +1,157 @@
 /* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    background-color: #1a1a1a;
+}
+
+h1 {
+    font-weight: bold 700;
+    font-size: 35px;
+    color: white;
+    text-align: left;
+    float: left;
+    padding: 1%;
+}
+
+h2 {
+    font-weight: bold 700;
+    font-size: 25px;
+    color: white;
+    text-align: right;
+    float: right;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    padding: 2%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: right;
+    padding: 0 1% 0 1%;
+}
+
+.buttonOne {
+    padding: 1%;
+}
+.buttonOne:hover { background-color: #c44545; }
+
+.buttonTwo {
+    padding: 1%;
+}
+.buttonTwo:hover { background-color: #c44545; }
+
+.buttonThree {
+    padding: 1%;
+}
+.buttonThree:hover { background-color: #c44545; }
+
+.buttonFour {
+    padding: 1%;
+}
+.buttonFour:hover { background-color: #c44545; }
+
+.buttonFive p{
+    text-align: center;
+    color: white;
+    font-weight: bold 700;
+    font-size: 20px;
+    margin-left: 40%;
+    margin-right: 40%;
+    padding: 2% 0 2% 0;
+    background-color: #1a1a1a; 
+}
+
+.bigName {
+    font-weight: bold 700;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: #c44545;
+    padding: 3% 0 3% 0;
+}
+
+.bigBox {
+    background-image: url("../Images/wetGround.jpg");
+
+    margin: 0 6% 0 6%;
+    padding: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.smallBoxCollectionOne {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 6% 6% 3% 6%;
+}
+
+.boxOne {
+    padding: 13% 17% 13% 13%;
+    background-color: #c44545;
+}
+
+.boxTwo {
+    padding: 13% 17% 13% 17%;
+    background-color: #c44545;
+}
+
+.boxThree {
+    padding: 13% 13% 13% 17%;
+    background-color: #c44545;
+}
