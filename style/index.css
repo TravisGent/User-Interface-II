@@ -1,1 +1,269 @@
 /* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    background-color: #1a1a1a;
+}
+
+h1 {
+    font-size: 35px;
+    color: white;
+    text-align: left;
+    float: left;
+    padding: 1%;
+}
+
+h2 {
+    font-size: 25px;
+    color: white;
+    text-align: right;
+    float: right;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    line-height: 50px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: right;
+    padding: 0 1% 0 1%;
+}
+
+.buttonOne {
+    padding: 1%;
+}
+.buttonOne:hover { background-color: #c44545; }
+
+.buttonTwo {
+    padding: 1%;
+}
+.buttonTwo:hover { background-color: #c44545; }
+
+.buttonThree {
+    padding: 1%;
+}
+.buttonThree:hover { background-color: #c44545; }
+
+.buttonFour {
+    padding: 1%;
+}
+.buttonFour:hover { background-color: #c44545; }
+
+.buttonFive {
+    color: white;
+    font-weight: bold 700;
+    font-size: 20px;
+    padding: 10px 24px;
+    background-color: #1a1a1a; 
+    display: inline-block;
+}
+
+.bigName {
+    font-weight: bold 700;
+    color: white;
+    text-align: center;
+    background-color: #c44545;
+    padding: 20px 42px;
+    font-size: 40px;
+}
+
+.bigBox {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bigBox::before {
+    background-image: url("../Images/wetGround.jpg");
+    background-size: cover;
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.bigBox > .centerBox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.smallBoxCollectionOne {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3% 6% 3% 6%;
+}
+
+.boxOne {
+    padding: 13% 18% 13% 13%;
+    background-image: url("../Images/mountains.jpg");
+    background-size: cover;
+}
+
+.boxTwo {
+    padding: 13% 16% 13% 16%;
+    background-image: url("../Images/brownRockyMountain.jpg");
+    background-size: cover;
+}
+
+.boxThree {
+    padding: 13% 13% 13% 18%;
+    background-image: url("../Images/desertMountains.jpg");
+    background-size: cover;
+}
+
+.smallBoxCollectionTwo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3% 6% 3% 6%;
+}
+
+.boxFour {
+    padding: 13% 18% 13% 13%;
+    background-image: url("../Images/forest.jpg");
+    background-size: cover;
+}
+
+.boxFive {
+    padding: 13% 16% 13% 16%;
+    background-image: url("../Images/campfire.jpg");
+    background-size: cover;
+}
+
+.boxSix {
+    padding: 13% 13% 13% 18%;
+    background-image: url("../Images/leaves.jpg");
+    background-size: cover;
+}
+
+footer {
+    background-color: #c44545;
+    line-height: 50px;
+}
+
+.contactMe {
+    color: white;
+    font-size: 30px;
+    white-space: nowrap;
+    padding-right: 100px;
+}
+
+.socialButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.twitter, .instagram, .twitch, .contactMe {
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    margin: 2%;
+}
+
+.twitter {
+    background-image: url("../Images/twitter.jpg");
+}
+.instagram {
+    background-image: url("../Images/instagram.jpg");
+}
+.twitch {
+    background-image: url("../Images/twitch.jpg");
+}
+
+@media screen and (max-width: 940px) {
+    .smallBoxCollectionOne, .smallBoxCollectionTwo {
+        flex-direction: column;
+    }
+
+    .boxOne, .boxTwo, .boxThree, .boxFour, .boxFive, .boxSix {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        padding: 30%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h2 {
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    h2 {
+        font-size: 15px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    h1 {
+        font-size: 20px;
+    }
+}
