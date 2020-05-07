@@ -53,7 +53,6 @@ body {
 }
 
 h1 {
-    font-weight: bold 700;
     font-size: 35px;
     color: white;
     text-align: left;
@@ -62,7 +61,6 @@ h1 {
 }
 
 h2 {
-    font-weight: bold 700;
     font-size: 25px;
     color: white;
     text-align: right;
@@ -74,7 +72,7 @@ a {
 }
 
 header {
-    padding: 2%;
+    line-height: 50px;
 }
 
 .buttons {
@@ -103,35 +101,49 @@ header {
 }
 .buttonFour:hover { background-color: #c44545; }
 
-.buttonFive p{
-    text-align: center;
+.buttonFive {
     color: white;
     font-weight: bold 700;
     font-size: 20px;
-    margin-left: 40%;
-    margin-right: 40%;
-    padding: 2% 0 2% 0;
+    padding: 10px 24px;
     background-color: #1a1a1a; 
+    display: inline-block;
 }
 
 .bigName {
     font-weight: bold 700;
-    font-size: 50px;
     color: white;
     text-align: center;
-    margin-left: 25%;
-    margin-right: 25%;
     background-color: #c44545;
-    padding: 3% 0 3% 0;
+    padding: 20px 42px;
+    font-size: 40px;
 }
 
 .bigBox {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bigBox::before {
     background-image: url("../Images/wetGround.jpg");
     background-size: cover;
-    margin: 0 6% 0 6%;
-    padding: 20%;
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.bigBox > .centerBox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     display: flex;
+    align-items: center;
     flex-direction: column;
+    justify-content: center;
 }
 
 .smallBoxCollectionOne {
@@ -186,41 +198,72 @@ header {
 
 footer {
     background-color: #c44545;
-    height: 100px;
-    margin: 8% 0 0 0;
-    display: flex;
-    flex-direction: row;
+    line-height: 50px;
 }
 
 .contactMe {
     color: white;
-    font-weight: bold 700;
-    font-size: 35px;
-    text-align: center;
+    font-size: 30px;
+    white-space: nowrap;
+    padding-right: 100px;
 }
 
-.contactMe p {
-    padding: 25px;
-    text-align: center;
+.socialButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.twitter, .instagram, .twitch, .contactMe {
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    margin: 2%;
 }
 
 .twitter {
     background-image: url("../Images/twitter.jpg");
-    background-size: cover;
-    padding: 1%;
-    margin: 35px 15px 35px 15px;
 }
-
 .instagram {
     background-image: url("../Images/instagram.jpg");
-    background-size: cover;
-    padding: 1%;
-    margin: 35px 15px 35px 15px;
 }
-
 .twitch {
     background-image: url("../Images/twitch.jpg");
-    background-size: cover;
-    padding: 1%;
-    margin: 35px 15px 35px 15px;
+}
+
+@media screen and (max-width: 940px) {
+    .smallBoxCollectionOne, .smallBoxCollectionTwo {
+        flex-direction: column;
+    }
+
+    .boxOne, .boxTwo, .boxThree, .boxFour, .boxFive, .boxSix {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        padding: 30%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h2 {
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    h2 {
+        font-size: 15px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    h1 {
+        font-size: 20px;
+    }
 }
