@@ -127,7 +127,7 @@ header {
 
 .bigBox {
     background-image: url("../Images/wetGround.jpg");
-
+    background-size: cover;
     margin: 0 6% 0 6%;
     padding: 20%;
     display: flex;
@@ -138,20 +138,89 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 6% 6% 3% 6%;
+    margin: 3% 6% 3% 6%;
 }
 
 .boxOne {
     padding: 13% 18% 13% 13%;
-    background-color: #c44545;
+    background-image: url("../Images/mountains.jpg");
+    background-size: cover;
 }
 
 .boxTwo {
     padding: 13% 16% 13% 16%;
-    background-color: #c44545;
+    background-image: url("../Images/brownRockyMountain.jpg");
+    background-size: cover;
 }
 
 .boxThree {
     padding: 13% 13% 13% 18%;
+    background-image: url("../Images/desertMountains.jpg");
+    background-size: cover;
+}
+
+.smallBoxCollectionTwo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3% 6% 3% 6%;
+}
+
+.boxFour {
+    padding: 13% 18% 13% 13%;
+    background-image: url("../Images/forest.jpg");
+    background-size: cover;
+}
+
+.boxFive {
+    padding: 13% 16% 13% 16%;
+    background-image: url("../Images/campfire.jpg");
+    background-size: cover;
+}
+
+.boxSix {
+    padding: 13% 13% 13% 18%;
+    background-image: url("../Images/leaves.jpg");
+    background-size: cover;
+}
+
+footer {
     background-color: #c44545;
+    height: 100px;
+    margin: 8% 0 0 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.contactMe {
+    color: white;
+    font-weight: bold 700;
+    font-size: 35px;
+    text-align: center;
+}
+
+.contactMe p {
+    padding: 25px;
+    text-align: center;
+}
+
+.twitter {
+    background-image: url("../Images/twitter.jpg");
+    background-size: cover;
+    padding: 1%;
+    margin: 35px 15px 35px 15px;
+}
+
+.instagram {
+    background-image: url("../Images/instagram.jpg");
+    background-size: cover;
+    padding: 1%;
+    margin: 35px 15px 35px 15px;
+}
+
+.twitch {
+    background-image: url("../Images/twitch.jpg");
+    background-size: cover;
+    padding: 1%;
+    margin: 35px 15px 35px 15px;
 }
